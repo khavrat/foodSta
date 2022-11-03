@@ -1,0 +1,74 @@
+.site-nav__wrapper {
+    @include centeredFlex();
+    margin-left: auto;
+    @include pretablet {
+        display: none;
+    }
+}
+
+.site-nav__list {
+    display: flex;
+    gap: 28px;
+    margin-right: 30px;
+}
+
+.site-nav__home {
+    width: 38px;
+}
+
+.site-nav__offerings,
+.site-nav__favorites {
+    width: 58px;
+}
+
+.site-nav__customers {
+    width: 105px;
+}
+
+.site-nav__subscribe {
+    width: 62px;
+}
+
+.site-nav__link {
+    display: block;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $secondary-text-color;
+    text-decoration: none;
+    padding: 10px 0;
+    @include transitionItem(color);
+    
+    &:hover, &:focus {
+        width: auto;
+        font-weight: 700;
+        color: $accent-color;
+        text-decoration: underline;
+    }
+}
+
+// Navigation from footer
+.footer__site-nav {
+    display: flex;
+    margin-bottom: 30px;
+
+    @include tablet {
+        margin-bottom: 40px;
+    }
+}
+
+.site-nav__list--footer {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
+
+    @include tablet {
+        width: 100%;
+        display: flex;
+        margin-left: 90px;
+    }
+
+    @include desktop {
+        margin-left: 120px;
+    }
+}

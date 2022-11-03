@@ -1,0 +1,63 @@
+@import "./utils/variables";
+@import "./utils/totalstyles";
+
+@import "./utils/breakpoints";
+@import "./utils/mixins";
+@import "./components/container";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/offerings";
+@import "./layouts/favorites";
+@import "./layouts/customers";
+@import "./layouts/subscribe";
+@import "./layouts/footer";
+
+@import "./components/modal";
+@import "./components/mobilemenu";
+
+
+
+
+
+
+// .slick-prev.slick-arrow {
+//     font-size: 0;
+//     border: 0;
+//     background-color: transparent;
+//     visibility: hidden;
+// }
+// .slick-track {
+//     display: flex;
+   
+//     @media screen and (max-width: $pretablet) {
+//         display: none;
+//     }
+// }
+
+// .slider img {
+//     max-width: 100%;
+  
+// }
+
+// .slider {
+//     position: relative;
+//     top: -200px;
+//     right: -390px;
+   
+   
+// }
+
+// .slick-list {
+//     overflow: hidden;
+   
+
+
+
+
+
+
+
+
+
+

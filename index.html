@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header" id="home">
+        <div class="container container--header">
+            <a class="logo" href="./index.html">
+                <svg width="66" height="52">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="28" height="28" aria-label="Open mobile menu"> 
+                    <use class="menu__button" href="./images/icons.svg#icon-menu"></use>
+                 </svg>
+            </button>
+            <div class="site-nav__wrapper">
+                <ul class="site-nav__list">
+                    <li class="site-nav__home">
+                        <a class="site-nav__link" href="#home">Home</a>
+                    </li>
+                    <li class="site-nav__offerings">
+                        <a class="site-nav__link" href="#offerings">Offerings</a>
+                    </li>
+                    <li class="site-nav__favorites">
+                        <a class="site-nav__link" href="#favorites">Favorites</a>
+                    </li>
+                    <li class="site-nav__customers">
+                        <a class="site-nav__link" href="#customers">Customers Say</a>
+                    </li>
+                    <li class="site-nav__subscribe">
+                        <a class="site-nav__link" href="#subscribe">Subscribe</a>
+                    </li>
+                </ul>
+                <button class="button" type="button" aria-lable="open order form" data-form-open>Order Now</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- hero section -->
+        <section class="hero">
+            <div class="container container--hero">
+                <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+                <p class="hero__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                <button class="button" type="button" aria-label="open order form" data-form-opened>Order Now</button>
+                <div class="slider__wrapper">
+                    <img class="slider__img"
+                    srcset="./images/meatballstab.png 292w,
+                            ./images/meatballstab@2x.png 584w,
+                            ./images/meatballsdesk.png 528px,
+                            ./images/meatballsdesk@2x.png 1056px "
+                    src="./images/meatballstab.png"
+                    alt="meatballs"
+                    sizes="(min-width: 1280px) 528px,
+                            (min-width: 768px) 292px,
+                            100vw">
+                </div>
+                <ul>
+                    <li>
+                        <button class="slider__arrow slider__arrow--left" type="button"><svg width="48" height="40"><use href="./images/icons.svg#arrowleft"></use></svg></button>
+                    </li>
+                    <li>
+                        <button class="slider__arrow slider__arrow--right" type="button"><svg width="40" height="48"><use href="./images/icons.svg#arrowright"></use></svg></button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- offerings section -->
+        <section class="offerings overlay">
+            <div class="container">
+                <img class="offerings__img"
+                srcset="./images/apple.png 1x, 
+                        ./images/apple@2x.png 2x"
+                src="./images/apple.png"
+                alt="apple">   
+                <div class="offerings__wrapper">
+                    <h2 class="offerings__title" id="offerings">What’s Special About Our Offerings</h2>
+                    <p class="offerings__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                    <ul class="offerings__list">
+                        <li class="offerings__item">
+                            <svg class="offerings__svg" width="32" height="32">
+                                <use href="./images/icons.svg#icon-deliv"></use>
+                            </svg>
+                            <h3 class="offerings__name">Fasest Delivery</h3>
+                            <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>    
+                        </li>
+                        <li class="offerings__item">
+                            <svg class="offerings__svg" width="32" height="32">
+                                <use href="./images/icons.svg#icon-order"></use>
+                            </svg>
+                            <h3 class="offerings__name">Easy to order</h3>
+                            <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>    
+                        </li>
+                    </ul>
+                    <button class="button button--offerings" type="button" aria-label="open order form" data-form-opening>Order Now</button>
+                    <a class="offerings__link" href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+        <!-- Favorites section -->
+        <section class="favorites" id="favorites">
+            <div class="container">
+                <h2 class="favorites__title">Some of Our Favorites</h2>
+                <p class="favorites__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul class="favorites__list">
+                    <li class="favorites__item">
+                        <img
+                        srcset="./images/gamburger.png 315w,
+                                ./images/gamburgermid.png 269w,
+                                ./images/gamburgermin.png 224w"
+                        src="./images/gamburgermin.png"
+                        alt="gamburger"
+                        sizes="(min-width: 1280px) 315px,
+                                (min-width: 768px) 269px,
+                                (min-width: 320px) 224px,
+                                100vw">
+                    </li>
+                    <li class="favorites__item">
+                        <img
+                        srcset="./images/pasta.png 315w,
+                                ./images/pastamid.png 269w,
+                                ./images/pastamin.png 224w"
+                        src="./images/pastamin.png"
+                        alt="pasta"
+                        media="(min-width: 320px)"
+                        sizes="(min-width: 1280px) 315px,
+                                (min-width: 768px) 269px, 
+                                (min-width: 320px) 224px, 
+                                100vw">
+                    </li>
+                    <li class="favorites__item">
+                        <img
+                        srcset="./images/pizza.png 315w,
+                                ./images/pizzamid.png 269w,
+                                ./images/pizzamin.png 224w"
+                        src="./images/pizzamin.png"
+                        alt="pizza"
+                        media="(min-width: 320px)"
+                        sizes="(min-width: 1280px) 315px,
+                                (min-width: 768px) 269px, 
+                                (min-width: 320px) 224px, 
+                                100vw">
+                    </li>
+                    <li class="favorites__item">
+                        <img
+                        srcset="./images/chicken.png 315w,
+                                ./images/chickenmid.png 269w"
+                        src="./images/chickenmid.png"
+                        alt="chicken"
+                        media="(min-width: 320px)"
+                        sizes="(min-width: 1280px) 315px,
+                                (min-width: 768px) 269px, 
+                                100vw">
+                    </li>
+                    <li class="favorites__item">
+                        <img
+                        srcset="./images/salad.png 315w,
+                                ./images/saladmid.png 269w"
+                        src="./images/saladmid.png"
+                        alt="salad"
+                        media="(min-width: 320px)"
+                        sizes="(min-width: 1280px) 315px,
+                                (min-width: 768px) 269px, 
+                                100vw">
+                    </li>
+                    <li class="favorites__item">
+                        <img
+                        srcset="./images/borshch.png 315w,
+                                ./images/borshchmid.png 269w"
+                        src="./images/borshchmid.png"
+                        alt="borshch"
+                        media="(min-width: 320px)"
+                        sizes="(min-width: 1280px) 315px,
+                                (min-width: 768px) 269px, 
+                                100vw">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Customers section -->
+        <section class="customers customers__overlay" id="customers">
+            <div class="container">
+                <h2 class="customers__title">What our Customers Say</h2>
+                <p class="customers__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul class="customers__list">
+                    <li class="customers__item">
+                        <svg class="customers__svg" width="101" height="16">
+                            <use href="./images/icons.svg#icon-stars"></use>
+                        </svg>
+                        <p class="customers__text">“The Best app I have used to order food in a while, so many options to choose from too, I would recommend to a freind, No questions asked”</p>
+                        <div class="customers__data">
+                            <img src="./images/avatarmen.png" alt="customer photo">
+                            <div>
+                                <h3 class="customers__name">Sumith Shah</h3>
+                                <p class="customers__status">Some Dude</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="customers__item">
+                        <svg class="customers__svg" width="101" height="16">
+                            <use href="./images/icons.svg#icon-stars"></use>
+                        </svg>
+                        <p class="customers__text">“The ease with which I can just go in and order what i want was amazing, It has been a very pleasant experience ordering from this app”</p>
+                        <div class="customers__data">
+                            <img src="./images/avatarwomen.png" alt="customer photo">
+                            <div>
+                                <h3 class="customers__name">Sumith Shah</h3>
+                                <p class="customers__status">Some Dude</p>
+                            </div>    
+                        </div>
+                    </li>
+                </ul>
+                <img class="customers__decor"
+                srcset="./images/banan.png 546w,
+                        ./images/bananmid.png 281w
+                        ./images/bananmin.png 161w"
+                src="./images/bananmin.png"
+                alt="borshch"
+                media="(min-width: 320px)"
+                sizes="(min-width: 1280px) 546px,
+                        (min-width: 768px) 281px, 
+                        (min-width: 480px) 161px,
+                        (min-width: 320px) 161px,
+                        100vw">
+            </div>
+        </section>
+        <!-- Subscribe section -->
+        <section class="subscribe" id="subscribe">
+            <div class="container">
+                <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+                <p class="subscribe__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim 
+                    in eros elementum tristique.</p>
+                <form class="subscribe-form">
+                    <label>                    
+                        <input class="subscribe-form__input"  type="mail" name="mail" placeholder="Enter your email">
+                    </label>
+                    <button class="button button--subscribe" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class=" footer footer__overlay">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__site-nav">
+                    <a class="logo" href="./index.html">
+                        <svg width="66" height="52">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+                    <ul class="site-nav__list site-nav__list--footer">
+                        <li class="site-nav__home">
+                            <a class="site-nav__link" href="#home">Home</a>
+                        </li>
+                        <li class="site-nav__offerings">
+                            <a class="site-nav__link" href="#offerings">Offerings</a>
+                        </li>
+                        <li class="site-nav__favorites">
+                            <a class="site-nav__link" href="#favorites">Favorites</a>
+                        </li>
+                        <li class="site-nav__customers">
+                            <a class="site-nav__link" href="#customers">Customers Say</a>
+                        </li>
+                        <li class="site-nav__subscribe">
+                            <a class="site-nav__link" href="#subscribe">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="footer-form">
+                    <label class="footer-form__label" for="mail">Subscribe</label>
+                    <input class="footer-form__input" id="mail" type="mail" name="mail" placeholder="Enter your email">
+                    <button class="button button--footer" type="submit">Subscribe</button>
+                    <p class="footer-form__policy">By subscribing you agree to with our <a class="footer-form__link">Privacy Policy</a></p>
+                </form>
+            </div>
+            <div class="footer__block">
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Privacy Policy</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Terms of Service</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Cookies Settings</a>
+                    </li>
+                </ul>
+                <p class="footer__copyright">2022 FoodSta. All right reservedop</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Order form -->
+    <div class="backdrop is-hidden" data-form>
+        <div class="order">
+            <button class="order__close" type="button" aria-lable="Close order form" data-form-close>
+                <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form>
+                <h2 class="order__title">Order Form</h2>
+                <div class="order__field">
+                    <label class="order__label">Name
+                        <input class="order__input" type="text" name="name" placeholder="Jenny Wilson">
+                    </label>
+                </div>
+                <div class="order__field">
+                    <label class="order__label">Phone number
+                        <input class="order__input" type="phone" name="phone" placeholder="+38(099)444 22 11">
+                    </label>
+                </div>
+                <div class="order__field">
+                    <label class="order__label">E-mail
+                        <input class="order__input" type="email" name="email" placeholder="willie.jennings@example.com">
+                    </label>
+                </div>
+                <button type="submit" class="order__send">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="menu js-menu-container" id="mobile-menu">
+        <button class="menu__toggle js-close-menu" type="button" aria-lable="close mobile-menu" data-menu-close>
+            <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <ul class="site-nav__list site-nav__list--menu">
+            <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--menu toplink js-close-menu1" href="#home">Home</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--menu js-close-menu2" href="#offerings">Offerings</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--menu js-close-menu3" href="#favorites">Favorites</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--menu js-close-menu4" href="#customers">Customers Say</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--menu downlink js-close-menu5" href="#subscribe">Subscribe</a>
+            </li>
+        </ul>
+    </div>
+    <script defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+    <script src="./js/anchors.js"></script>
+    <script src="./js/orderform.js"></script>
+</body>
+</html>
+
+
+
+
+
+                <!-- <div class="slider__wrapper"> -->
+                    <!-- <div class="ok"> -->
+                        <!-- <div class="slider">
+                            <div class="slider__item"><img src="./images/meatballstab.jpg" alt="meatballs"></div>
+                            <div class="slider__item"><img src="./images/saladtab.jpg" alt="salad"></div>
+                            <div class="slider__item"><img src="./images/ralstontab.jpg" alt="ralston"></div>
+                        </div>
+                        <div class="slider--desk">
+                            <div class="slider__item"><img src="./images/meatballsdesk.jpg" alt="meatballs"></div>
+                            <div class="slider__item"><img src="./images/saladdesk.jpg" alt="salad"></div>
+                            <div class="slider__item"><img src="./images/ralstondesk.jpg" alt="ralston"></div>
+                        </div>
+                        <svg class="slider__circle-tab" width="320" height="320">
+                            <use href="./images/icons.svg#circletab"></use>
+                        </svg>
+                        <svg class="slider__circle-desk" width="580" height="580">
+                            <use href="./images/icons.svg#circledesk"></use>
+                        </svg> -->
+                    <!-- </div> -->
+                    <!-- <div class="previt">
+                        <svg class="slider__arrow slider__arrow--left" width="48" height="40"><use href="./images/icons.svg#arrowleft"></use></svg>
+                        <svg class="slider__arrow slider__arrow--right" width="40" height="48"><use href="./images/icons.svg#arrowright"></use></svg>
+                    </div> -->
+                <!-- </div> -->
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/slide.js"></script> -->
+

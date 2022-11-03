@@ -1,0 +1,43 @@
+
+.hero {
+    padding: 60px 0 50px;
+
+    @media screen and (min-width: $tablet) and (max-width: $predesktop) {
+        padding: 60px 0 73px;
+    }
+
+    @include desktop {
+        padding: 159px 0 24px;
+    }
+}
+.container--hero {
+    position: relative;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    color:$primary-text-color;
+    margin-bottom: 28px;
+
+    @include tablet {
+        width: 537px;
+        font-size: 42px;
+        line-height: 1.2;
+    }
+}
+
+.hero__discription {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $primary-text-color;
+    margin-bottom: 28px;
+
+    @include tablet {
+        width: 336px;
+        font-size: 16px;
+    }
+}
+
+@import "../components/slider";

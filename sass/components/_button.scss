@@ -1,0 +1,63 @@
+// Button header
+.button {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: right;
+    color: $primary-text-color;
+    background-color: $accent-color;
+    border: none;
+    border-radius: 30px;
+    padding: 6px 18px;
+    @include transitionItem(background-color);
+
+    &:hover, &:focus {
+        background-color: $active-accent-color;
+    }
+}
+
+// Mobile burger button
+.menu__button {
+    fill: $accent-color;
+    @include transitionItem(fill);
+
+    .menu-toggle:hover &,
+    .menu-toggle:focus & {
+        fill: $secondary-accent-color;
+    }
+}
+
+// Button offerings section
+.button--offerings {
+    padding: 10px 22px;
+    background: $whight-background-color;
+    border: 2px solid $rare-accent-color;
+
+    &:hover, &:focus {
+        border: 2px solid $rare-green-color;
+    }
+}
+
+// Button subscribe section
+.button--subscribe {
+    background-color: $accent-color;
+    border: 0.854167px solid transparent;
+    padding: 11px 22px;
+    @include transitionItem(background-color);
+
+    &:hover, &:focus, &:active {
+        background-color: $active-accent-color;
+    }
+}
+
+// Button from footer-form
+.button--footer {
+    background-color: $whight-background-color;
+    border: 0.854167px solid $rare-accent-color;
+    padding: 11px 22px;
+    @include transitionItem(background-color);
+
+    &:hover, &:focus, &:active {
+        background-color: $secondary-accent-color;
+    }
+}

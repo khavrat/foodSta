@@ -1,0 +1,188 @@
+.offerings {
+    padding-top: 41px;
+    padding-bottom: 60px;
+
+    @include tablet {
+        padding-top: 604px;
+        padding-bottom: 100px;
+    }
+   
+    @include desktop {
+        padding-top: 280px;
+    }
+}
+
+.offerings__img {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.overlay {
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/rectangle320.jpg);  
+
+    @include bigmobile {
+        max-width: 480px;
+        background-image: url(../images/applebg480.jpg);  
+        @include retina {
+            background-image: url(../images/applebg480@2x.jpg);
+        }
+
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $predesktop) {
+        max-width: 768px;
+        margin-top: -68px;        
+        background-image: url(../images/applebgmid.jpg);
+        @include retina {
+            background-image: url(../images/applebgmid@2x.jpg);
+        }
+    }
+
+    @include desktop {
+        max-width: 1280px;
+        background-image: url(../images/applebgbig.jpg);
+        @include retina {
+            background-image: url(../images/applebgbig@2x.jpg);
+        }
+    }
+}
+
+.offerings__wrapper {
+
+    @include tablet {
+        width: 526px;
+    }
+
+    @include desktop {
+        width: 50%;
+        margin-left: auto;
+        padding-right: 107px;
+    }
+}
+
+.offerings__title {
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 1.18;
+    color: $primary-text-color;
+
+    @include tablet {
+        margin-bottom: 20px;
+        font-size: 42px;
+        line-height: 1.17;
+    }
+
+    @include desktop {
+        line-height: 1.2;
+    }
+}
+
+.offerings__discription {
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $primary-text-color;
+
+    @include tablet {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    @include desktop {
+        line-height: 1.5;
+    }
+}
+
+.offerings__list {
+    margin-bottom: 28px;
+
+    @media screen and (min-width: $tablet) and (max-width: $predesktop) {
+        display: flex;
+        gap: 116px;
+        margin-bottom: 32px;
+    }
+
+    @include desktop {
+        display: flex;
+        gap: 67px;
+        margin-bottom: 40px;
+        margin-left: auto;
+    }
+}
+
+.offerings__item {
+    @include pretablet {
+        &:not(:last-child) {
+            margin-bottom: 28px;
+        }
+    }
+
+    @include tablet {
+        width: 252px;
+    }
+}
+
+.offerings__svg {
+    margin-bottom: 8px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $basic-background-color;
+    background-position: center;
+}
+
+.offerings__name {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.17;
+    color: $primary-text-color;
+
+    @include desktop {
+        line-height: 1.4;
+    }
+}
+
+.offerings__text {
+    font-size: 14px;
+    line-height: 1.14;   
+    color: $primary-text-color;
+
+    @include desktop {
+        line-height: 1.5;
+    }
+}
+
+.offerings__link {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $secondary-text-color;
+    text-decoration: none;
+    margin-left: 24px;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-left: 4px;
+        background-image: url(../images/iconarrow.svg);
+        background-size: contain;
+        vertical-align: middle;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}

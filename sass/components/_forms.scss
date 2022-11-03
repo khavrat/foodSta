@@ -1,0 +1,142 @@
+// Form from subscribe section
+.subscribe-form {
+
+    @include pretablet {
+        max-width: 279px; 
+        text-align: right;
+    }
+}
+
+.subscribe-form__input {
+    display: block;
+    padding: 12px 12px;
+    width: 100%;
+    background: $basic-background-color;
+    border: 0.854167px solid $secondary-accent-color;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+        outline: none;
+        border: 1px solid $rare-accent-color;
+    }
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.5; 
+        color: $form-text;
+    }
+
+    @include tablet {
+        display: inline-block;
+        width: 394px;
+        margin-bottom: 0;
+        margin-right: 32px;
+    }
+}
+
+@import "../components/button";
+
+
+// Form from footer
+.footer-form {
+    margin-bottom: 50px;
+
+    @include pretablet {
+        max-width: 279px; 
+        text-align: right;
+        margin-bottom: 60px;
+    }
+
+    @include tablet {
+        text-align: left;
+        margin-bottom: 90px;
+    }
+
+    @include desktop {
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+}
+
+.footer-form__label {
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $primary-text-color;
+}
+
+.footer-form__input {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 12px 12px;
+    border: 0.854167px solid $secondary-accent-color;
+    border-radius: 30px;
+    cursor: pointer;
+    @include transitionItem(border);
+
+    &:hover, &:focus, &:active {
+        outline: none;
+        border: 1px solid $rare-accent-color;
+    }
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.5; 
+        color: $form-text;
+    }
+
+    @include tablet {
+        display: inline-block;
+        width: 279px;
+        margin-bottom: 12px;
+        margin-right: 13px;
+    }
+}
+
+@import "../components/button";
+
+// Чистий фон інпуту
+input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+    &:hover, &:focus, &:active {
+        transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+    }
+}
+
+.footer-form__policy {
+    font-size: 10px;
+    line-height: 1.2;
+    color: $primary-text-color;
+    margin-top: 20px;
+    text-align: left;
+
+    @include tablet {
+        font-size: 12px;
+        line-height: 1.17;
+        margin-top: 0;
+    }
+}
+
+.footer-form__link {
+    font-size: 10px;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    color: $rare-accent-color;
+    @include transitionItem(color);
+
+    &:hover, &:focus, &:active {
+        color: $rare-green-color;
+    }
+
+    @include tablet {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}

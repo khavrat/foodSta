@@ -1,0 +1,15 @@
+.header {
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.container--header {
+    @include centeredFlex();
+    min-height: 72px;
+    background-color: $basic-background-color;
+}
+
+@import "../components/button";
+
+
+
+@import "../components/navigation";

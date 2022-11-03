@@ -1,0 +1,171 @@
+.customers {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 769px;
+
+    @include bigmobile {
+        padding-bottom: 115px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $predesktop) {
+        height: 544px;
+        padding-bottom: 120px;
+    }
+
+    @include desktop {
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+}
+
+.customers__overlay {
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position-y: 100%;
+    background-image: url(../images/customersbg320.jpg);  
+
+    @include bigmobile {
+        max-width: 480px;
+        background-image: url(../images/customersbg480.jpg);  
+    }
+
+    @include tablet {
+        max-width: 768px;
+        background-image: url(../images/customersbg768.jpg);
+    }
+
+    @include desktop {
+        max-width: 1280px;
+        background-image: url(../images/customersbg1280.jpg);
+    }
+}
+
+.customers__title {
+    font-size: 28px;
+    line-height: 1.18;
+    color: $primary-text-color;
+    margin-bottom: 20px;
+
+    @include tablet {
+        font-size: 42px;
+        line-height: 1.17;
+    }
+}
+
+.customers__discription {
+    font-size: 14px;
+    line-height: 1.14;
+    color: $primary-text-color;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 1.19;   
+    }
+}
+
+.customers__list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include bigmobile {
+        align-items: flex-start;
+    }
+
+    @include tablet {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    @include desktop {
+        justify-content: flex-start;
+        gap: 139px;
+    }
+}
+
+.customers__item {
+    padding: 8px;
+    min-width: 280px;
+    min-height: 247px;
+    border-radius: 0 30px 30px 30px;
+    background-color: #FFFFFF;
+
+    @include pretablet {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    @include bigmobile {
+        width: 336px;
+        min-height: 244px;  
+    }
+
+    @include desktop {
+        width: 501px;
+        min-height: 227px;
+    }
+}
+
+.customers__svg {
+    margin-bottom: 28px;
+}
+
+.customers__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $primary-text-color;
+    margin-bottom: 40px;
+
+    @include tablet {
+        font-size: 18px;
+        line-height: 1.17;        
+    }
+}
+
+.customers__data {
+    @include centeredFlex();
+    gap: 16px;
+    width: 160px;
+    border-right: 0.854167px solid $rare-accent-color;
+}
+
+.customers__name {
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $primary-text-color;
+}
+
+.customers__status {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $primary-text-color;
+}
+
+.customers__decor {
+    @include pretablet {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include tablet {
+        margin-left: auto;
+        margin-top: 45px;
+    }
+
+    @include desktop {
+        margin-top: 120px;
+        position: absolute;
+        bottom: -190px;
+        right: 0;
+        margin: 0;
+       
+    }
+}

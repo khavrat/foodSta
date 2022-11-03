@@ -1,0 +1,96 @@
+.slider__wrapper {
+    width: 320px;
+    height: 320px;
+    background: $whight-background-color;
+    border: 14px solid $secondary-accent-color;
+    border-radius: 50%;
+    @include transitionItem(border);
+
+    @include pretablet {
+        display: none;
+    }
+
+    @include tablet {
+        position: absolute;
+        top: 80px;
+        right: 40px; 
+
+        &:hover, &:focus, &:active {
+            border: 14px solid $accent-color;
+        }
+    }
+
+    @include desktop { 
+        width: 580px;
+        height: 580px;
+        border: 26px solid $secondary-accent-color;
+        top: -145px;
+        right: 30px;
+
+        &:hover, &:focus, &:active {
+            border: 26px solid $accent-color;
+        }
+    }
+}
+
+.slider__img {
+    @include centeredFlex();
+}
+
+.slider__arrow {
+    @include pretablet {
+        display: none;
+    }
+
+    @include tablet {
+        width: 34px;
+        height: 28px;
+        @include centeredFlex();
+        background-color: $whight-background-color;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06); 
+
+        &:hover, &:focus {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    @include desktop {
+        width: 48px;
+        height: 40px;
+
+        &:hover, &:focus {
+            fill: $rare-accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    &--right {
+        position: absolute;
+
+        @media screen and (min-width: $tablet) and (max-width: $predesktop) {
+            top: calc(306px / 2 + 89px);
+            right: 32px;
+        }
+
+        @include desktop {
+            top: calc(580px / 2 + (-145px));
+            right: 16px;
+        }
+    }
+
+    &--left {
+        position: absolute;
+
+        @media screen and (min-width: $tablet) and (max-width: $predesktop) {
+            top: calc(306px / 2 + 89px);
+            right: 334px;
+        }
+
+        @include desktop {
+            top: calc(580px / 2 + (-145px));
+            right: 570px;
+        }
+    }
+}
