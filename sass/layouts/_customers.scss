@@ -111,8 +111,13 @@
     }
 }
 
-.customers__svg {
+.customers__stars {
+    display: flex;
     margin-bottom: 28px;
+}
+
+.customers__star:not(:last-child) {
+    margin-right: 4px;
 }
 
 .customers__text {
