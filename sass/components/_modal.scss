@@ -72,6 +72,27 @@
     border-radius: 30px;
     outline: none;
 }
+.form__error {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+    display: none;
+  }
+input:valid:not(:placeholder-shown) {
+    border-color: green;
+  }
+  
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+  }
+input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+  }
+
+
+
 
 .order__send {  
     font-weight: 500;
@@ -99,6 +120,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
+    z-index: 10;
     @include transitionItem(opacity);
 }
 

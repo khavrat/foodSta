@@ -56,25 +56,53 @@
                 <p class="hero__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
                 <button class="button" type="button" aria-label="open order form" data-form-opened>Order Now</button>
                 <div class="slider__wrapper">
-                    <img class="slider__img"
-                    srcset="./images/meatballstab.png 292w,
-                            ./images/meatballstab@2x.png 584w,
-                            ./images/meatballsdesk.png 528px,
-                            ./images/meatballsdesk@2x.png 1056px "
-                    src="./images/meatballstab.png"
-                    alt="meatballs"
-                    sizes="(min-width: 1280px) 528px,
-                            (min-width: 768px) 292px,
-                            100vw">
+                    <div class="slider">
+                        <div class="slider__item">
+                            <img class="slider__img"
+                            srcset="./images/meatballstab.png 292w,
+                                    ./images/meatballstab@2x.png 584w,
+                                    ./images/meatballsdesk.png 528w,
+                                    ./images/meatballsdesk@2x.png 1056w "
+                            src="./images/meatballstab.png"
+                            alt="meatballs"
+                            sizes="(min-width: 1280px) 528px,
+                                    (min-width: 768px) 292px,
+                                    100vw">
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider__img"
+                            srcset="./images/saladtab.png 292w,
+                                    ./images/saladtab@2x.png 584w,
+                                    ./images/saladdesk.png 528w,
+                                    ./images/saladdesk@2x.png 1056w "
+                            src="./images/saladtab.png"
+                            alt="salad"
+                            sizes="(min-width: 1280px) 528px,
+                                    (min-width: 768px) 292px,
+                                    100vw">
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider__img"
+                            srcset="./images/ralstontab.png 292w,
+                                    ./images/ralstontab@2x.png 584w,
+                                    ./images/ralstondesk.png 528w,
+                                    ./images/ralstondesk@2x.png 1056w "
+                            src="./images/ralstontab.png"
+                            alt="ralston"
+                            sizes="(min-width: 1280px) 528px,
+                                    (min-width: 768px) 292px,
+                                    100vw">
+                        </div>
+                    </div>
                 </div>
-                <ul>
+                <!-- <ul>
                     <li>
                         <button class="slider__arrow slider__arrow--left" type="button"><svg width="48" height="40"><use href="./images/icons.svg#arrowleft"></use></svg></button>
                     </li>
                     <li>
                         <button class="slider__arrow slider__arrow--right" type="button"><svg width="40" height="48"><use href="./images/icons.svg#arrowright"></use></svg></button>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </section>
         <!-- offerings section -->
@@ -88,6 +116,8 @@
                 <div class="offerings__wrapper">
                     <h2 class="offerings__title" id="offerings">What’s Special About Our Offerings</h2>
                     <p class="offerings__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </div>
+                <div class="offerings__thumb">
                     <ul class="offerings__list">
                         <li class="offerings__item">
                             <svg class="offerings__svg" width="32" height="32">
@@ -361,12 +391,12 @@
                 <h2 class="order__title">Order Form</h2>
                 <div class="order__field">
                     <label class="order__label">Name
-                        <input class="order__input" type="text" name="name" placeholder="Jenny Wilson">
+                        <input class="order__input" type="text" name="name" placeholder="Jenny Wilson" required><span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
                     </label>
                 </div>
                 <div class="order__field">
                     <label class="order__label">Phone number
-                        <input class="order__input" type="phone" name="phone" placeholder="+38(099)444 22 11">
+                        <input class="order__input" type="tel" name="phone" placeholder="+38(099)444 22 11">
                     </label>
                 </div>
                 <div class="order__field">
@@ -413,6 +443,13 @@
 
     <script src="./js/anchors.js"></script>
     <script src="./js/orderform.js"></script>
+
+
+    <!-- Slider scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slide.js"></script>
+
 </body>
 </html>
 
@@ -420,34 +457,7 @@
 
 
 
-                <!-- <div class="slider__wrapper"> -->
-                    <!-- <div class="ok"> -->
-                        <!-- <div class="slider">
-                            <div class="slider__item"><img src="./images/meatballstab.jpg" alt="meatballs"></div>
-                            <div class="slider__item"><img src="./images/saladtab.jpg" alt="salad"></div>
-                            <div class="slider__item"><img src="./images/ralstontab.jpg" alt="ralston"></div>
-                        </div>
-                        <div class="slider--desk">
-                            <div class="slider__item"><img src="./images/meatballsdesk.jpg" alt="meatballs"></div>
-                            <div class="slider__item"><img src="./images/saladdesk.jpg" alt="salad"></div>
-                            <div class="slider__item"><img src="./images/ralstondesk.jpg" alt="ralston"></div>
-                        </div>
-                        <svg class="slider__circle-tab" width="320" height="320">
-                            <use href="./images/icons.svg#circletab"></use>
-                        </svg>
-                        <svg class="slider__circle-desk" width="580" height="580">
-                            <use href="./images/icons.svg#circledesk"></use>
-                        </svg> -->
-                    <!-- </div> -->
-                    <!-- <div class="previt">
-                        <svg class="slider__arrow slider__arrow--left" width="48" height="40"><use href="./images/icons.svg#arrowleft"></use></svg>
-                        <svg class="slider__arrow slider__arrow--right" width="40" height="48"><use href="./images/icons.svg#arrowright"></use></svg>
-                    </div> -->
-                <!-- </div> -->
 
 
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="js/slide.js"></script> -->
 

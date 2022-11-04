@@ -9,6 +9,7 @@
    
     @include desktop {
         padding-top: 280px;
+        padding-bottom: 90px;
     }
 }
 
@@ -41,7 +42,7 @@
 
     @media screen and (min-width: $tablet) and (max-width: $predesktop) {
         max-width: 768px;
-        margin-top: -68px;        
+        margin-top: -74px;        
         background-image: url(../images/applebgmid.jpg);
         @include retina {
             background-image: url(../images/applebgmid@2x.jpg);
@@ -50,8 +51,8 @@
 
     @include desktop {
         max-width: 1280px;
-        background-size: contain;
         margin-top: -25px;
+        background-size: contain;
         background-image: url(../images/applebgbig.jpg);
         @include retina {
             background-image: url(../images/applebgbig@2x.jpg);
@@ -60,15 +61,18 @@
 }
 
 .offerings__wrapper {
+    margin-bottom: 28px;
 
     @include tablet {
         width: 526px;
+        margin-bottom: 40px;
     }
 
     @include desktop {
         width: 50%;
         margin-left: auto;
         padding-right: 107px;
+        margin-bottom: 40px;
     }
 }
 
@@ -85,24 +89,30 @@
     }
 
     @include desktop {
-        line-height: 1.2;
+        font-size: 41px;
+        line-height: 1.1;
     }
 }
 
 .offerings__discription {
-    margin-bottom: 28px;
     font-size: 14px;
     line-height: 1.14;
     color: $primary-text-color;
 
     @include tablet {
-        margin-bottom: 40px;
         font-size: 16px;
         line-height: 1.19;
     }
 
     @include desktop {
-        line-height: 1.5;
+        line-height: 1.4;
+    }
+}
+
+.offerings__thumb {
+    @include desktop {
+        width: 50%;
+        margin-left: auto;
     }
 }
 
@@ -118,8 +128,8 @@
     @include desktop {
         display: flex;
         gap: 67px;
-        margin-bottom: 40px;
         margin-left: auto;
+        margin-bottom: 32px;
     }
 }
 
